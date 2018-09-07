@@ -1,7 +1,7 @@
 # Emrals Sentinel
 
 An all-powerful toolset for Emrals.
-[![Build Status](https://travis-ci.org/Emrals/sentinel.svg?branch=master)](https://travis-ci.org/emralspay/sentinel)
+[![Build Status](https://travis-ci.org/Emrals/sentinel.svg?branch=master)](https://travis-ci.org/Emrals/sentinel)
 
 Sentinel is an autonomous agent for persisting, processing and automating Emrals governance objects and tasks.
 
