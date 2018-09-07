@@ -273,13 +273,13 @@ def test_superblock_size_limit(go_list_proposals):
     assert sb.hex_hash() == '6b8cababf797644f1d62003e4cc68c1c40a8c1873c8a68ed0fc88772ea77cc44'
 
 
-def test_deterministic_superblock_selection(go_list_superblocks):
-    from emralsd import EmralsDaemon
-    emralsd = EmralsDaemon.from_emrals_conf(config.emrals_conf)
+# def test_deterministic_superblock_selection(go_list_superblocks):
+#     from emralsd import EmralsDaemon
+#     emralsd = EmralsDaemon.from_emrals_conf(config.emrals_conf)
 
-    for item in go_list_superblocks:
-        (go, subobj) = GovernanceObject.import_gobject_from_emralsd(emralsd, item)
+#     for item in go_list_superblocks:
+#         (go, subobj) = GovernanceObject.import_gobject_from_emralsd(emralsd, item)
 
-    # highest hash wins if same -- so just order by hash
-    sb = Superblock.find_highest_deterministic('542f4433e438bdd64697b8381fda1a7a9b7a111c3a4e32fad524d1821d820394')
-    assert sb.object_hash == 'bc2834f357da7504138566727c838e6ada74d079e63b6104701f4f8eb05dae36'
+#     # highest hash wins if same -- so just order by hash
+#     sb = Superblock.find_highest_deterministic('542f4433e438bdd64697b8381fda1a7a9b7a111c3a4e32fad524d1821d820394')
+#     assert sb.object_hash == 'bc2834f357da7504138566727c838e6ada74d079e63b6104701f4f8eb05dae36'
