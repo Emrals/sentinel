@@ -1,10 +1,9 @@
 # Emrals Sentinel
 
 An all-powerful toolset for Emrals.
+[![Build Status](https://travis-ci.org/Emrals/sentinel.svg?branch=master)](https://travis-ci.org/emralspay/sentinel)
 
-[![Build Status](https://travis-ci.org/emralspay/sentinel.svg?branch=master)](https://travis-ci.org/emralspay/sentinel)
-
-Sentinel is an autonomous agent for persisting, processing and automating Emrals governance objects and tasks, and for expanded functions in the upcoming Emrals V13 release (Evolution).
+Sentinel is an autonomous agent for persisting, processing and automating Emrals governance objects and tasks.
 
 Sentinel is implemented as a Python application that binds to a local version 12 emralsd instance on each Emrals Masternode.
 
@@ -31,7 +30,7 @@ Make sure the local Emrals daemon running is at least version 12.1 (120100)
 
 Clone the Sentinel repo and install Python dependencies.
 
-    $ git clone https://github.com/emralspay/sentinel.git && cd sentinel
+    $ git clone https://github.com/Emrals/sentinel.git && cd sentinel
     $ virtualenv ./venv
     $ ./venv/bin/pip install -r requirements.txt
 
